@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22FCC4A247C4DD8006F88B8 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FCC49247C4DD8006F88B8 /* AsyncImage.swift */; };
+		E22FCC4C247C5069006F88B8 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FCC4B247C5069006F88B8 /* ImageLoader.swift */; };
+		E22FCC4E247C50A3006F88B8 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FCC4D247C50A3006F88B8 /* ImageCache.swift */; };
 		E2979A06247C1E4500C0F337 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2979A05247C1E4500C0F337 /* AppDelegate.swift */; };
 		E2979A08247C1E4500C0F337 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2979A07247C1E4500C0F337 /* SceneDelegate.swift */; };
 		E2979A0A247C1E4500C0F337 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2979A09247C1E4500C0F337 /* ContentView.swift */; };
 		E2979A0C247C1E4900C0F337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2979A0B247C1E4900C0F337 /* Assets.xcassets */; };
 		E2979A0F247C1E4900C0F337 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2979A0E247C1E4900C0F337 /* Preview Assets.xcassets */; };
 		E2979A12247C1E4900C0F337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2979A10247C1E4900C0F337 /* LaunchScreen.storyboard */; };
-		E2979A1A247C1EE100C0F337 /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2979A19247C1EE100C0F337 /* Videos.swift */; };
 		E2979A1C247C212000C0F337 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2979A1B247C212000C0F337 /* Fetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E22FCC49247C4DD8006F88B8 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		E22FCC4B247C5069006F88B8 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		E22FCC4D247C50A3006F88B8 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		E2979A02247C1E4500C0F337 /* iPSVideos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPSVideos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2979A05247C1E4500C0F337 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2979A07247C1E4500C0F337 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +31,6 @@
 		E2979A0E247C1E4900C0F337 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2979A11247C1E4900C0F337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2979A13247C1E4900C0F337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2979A19247C1EE100C0F337 /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
 		E2979A1B247C212000C0F337 /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,8 +67,10 @@
 				E2979A05247C1E4500C0F337 /* AppDelegate.swift */,
 				E2979A07247C1E4500C0F337 /* SceneDelegate.swift */,
 				E2979A09247C1E4500C0F337 /* ContentView.swift */,
-				E2979A19247C1EE100C0F337 /* Videos.swift */,
 				E2979A1B247C212000C0F337 /* Fetcher.swift */,
+				E22FCC49247C4DD8006F88B8 /* AsyncImage.swift */,
+				E22FCC4B247C5069006F88B8 /* ImageLoader.swift */,
+				E22FCC4D247C50A3006F88B8 /* ImageCache.swift */,
 				E2979A0B247C1E4900C0F337 /* Assets.xcassets */,
 				E2979A10247C1E4900C0F337 /* LaunchScreen.storyboard */,
 				E2979A13247C1E4900C0F337 /* Info.plist */,
@@ -152,9 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22FCC4C247C5069006F88B8 /* ImageLoader.swift in Sources */,
 				E2979A06247C1E4500C0F337 /* AppDelegate.swift in Sources */,
-				E2979A1A247C1EE100C0F337 /* Videos.swift in Sources */,
+				E22FCC4E247C50A3006F88B8 /* ImageCache.swift in Sources */,
 				E2979A08247C1E4500C0F337 /* SceneDelegate.swift in Sources */,
+				E22FCC4A247C4DD8006F88B8 /* AsyncImage.swift in Sources */,
 				E2979A1C247C212000C0F337 /* Fetcher.swift in Sources */,
 				E2979A0A247C1E4500C0F337 /* ContentView.swift in Sources */,
 			);

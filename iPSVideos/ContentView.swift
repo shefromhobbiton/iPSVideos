@@ -7,18 +7,26 @@
 //
 
 import SwiftUI
+import Combine
+import Foundation
 
 struct ContentView: View {
-     @ObservedObject var fetcher = Fetcher()
+    @ObservedObject var fetcher = Fetcher()
+    //@Environment(\.imageCache) var cache: ImageCache
+    let url = URL(string: "https://i.picsum.photos/id/477/2000/2000.jpg")!
     
     var body: some View {
-        //Text("Hello World")
-        VStack {
+        NavigationView {
             List(fetcher.videoList) { videoList in
-                VStack (alignment: .leading) {
-                    Text(videoList.name)
-                }
-            }
+                AsyncImage(
+                    url: convertToURL(URLString: videoList.thumbnail),
+                    placeholder: Text("Loading ...")
+                )
+                
+                //video name
+                Text(videoList.name)
+            } 
+            .navigationBarTitle("Videos")
         }
     }
 }
@@ -27,4 +35,11 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+//return url
+private func convertToURL(URLString: String)->URL {
+    
+    let urlstr = URL(string: URLString)!
+    return urlstr
 }
