@@ -22,7 +22,18 @@
 		E29A3D78247D7BA400B50203 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A3D77247D7BA400B50203 /* Utils.swift */; };
 		E29A3D7A247D83B800B50203 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A3D79247D83B800B50203 /* VideoPlayerView.swift */; };
 		E29A3D7C247E6C5700B50203 /* EnvirontmentValueImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A3D7B247E6C5700B50203 /* EnvirontmentValueImageCache.swift */; };
+		E29A3D84247E7D4A00B50203 /* iPSVideosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A3D83247E7D4A00B50203 /* iPSVideosTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E29A3D91247E8AFB00B50203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E29799FA247C1E4500C0F337 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2979A01247C1E4500C0F337;
+			remoteInfo = iPSVideos;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E22FCC49247C4DD8006F88B8 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
@@ -42,10 +53,20 @@
 		E29A3D77247D7BA400B50203 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E29A3D79247D83B800B50203 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		E29A3D7B247E6C5700B50203 /* EnvirontmentValueImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvirontmentValueImageCache.swift; sourceTree = "<group>"; };
+		E29A3D81247E7D4A00B50203 /* iPSVideosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPSVideosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29A3D83247E7D4A00B50203 /* iPSVideosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPSVideosTests.swift; sourceTree = "<group>"; };
+		E29A3D85247E7D4A00B50203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E29799FF247C1E4500C0F337 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29A3D7E247E7D4A00B50203 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E2979A04247C1E4500C0F337 /* iPSVideos */,
+				E29A3D82247E7D4A00B50203 /* iPSVideosTests */,
 				E2979A03247C1E4500C0F337 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				E2979A02247C1E4500C0F337 /* iPSVideos.app */,
+				E29A3D81247E7D4A00B50203 /* iPSVideosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +125,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E29A3D82247E7D4A00B50203 /* iPSVideosTests */ = {
+			isa = PBXGroup;
+			children = (
+				E29A3D83247E7D4A00B50203 /* iPSVideosTests.swift */,
+				E29A3D85247E7D4A00B50203 /* Info.plist */,
+			);
+			path = iPSVideosTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,6 +154,24 @@
 			productReference = E2979A02247C1E4500C0F337 /* iPSVideos.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E29A3D80247E7D4A00B50203 /* iPSVideosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E29A3D88247E7D4A00B50203 /* Build configuration list for PBXNativeTarget "iPSVideosTests" */;
+			buildPhases = (
+				E29A3D7D247E7D4A00B50203 /* Sources */,
+				E29A3D7E247E7D4A00B50203 /* Frameworks */,
+				E29A3D7F247E7D4A00B50203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E29A3D92247E8AFB00B50203 /* PBXTargetDependency */,
+			);
+			name = iPSVideosTests;
+			productName = iPSVideosTests;
+			productReference = E29A3D81247E7D4A00B50203 /* iPSVideosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -134,6 +184,10 @@
 				TargetAttributes = {
 					E2979A01247C1E4500C0F337 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					E29A3D80247E7D4A00B50203 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = E2979A01247C1E4500C0F337;
 					};
 				};
 			};
@@ -151,6 +205,7 @@
 			projectRoot = "";
 			targets = (
 				E2979A01247C1E4500C0F337 /* iPSVideos */,
+				E29A3D80247E7D4A00B50203 /* iPSVideosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -163,6 +218,13 @@
 				E2979A12247C1E4900C0F337 /* LaunchScreen.storyboard in Resources */,
 				E2979A0F247C1E4900C0F337 /* Preview Assets.xcassets in Resources */,
 				E2979A0C247C1E4900C0F337 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29A3D7F247E7D4A00B50203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +250,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E29A3D7D247E7D4A00B50203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29A3D84247E7D4A00B50203 /* iPSVideosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E29A3D92247E8AFB00B50203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2979A01247C1E4500C0F337 /* iPSVideos */;
+			targetProxy = E29A3D91247E8AFB00B50203 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E2979A10247C1E4900C0F337 /* LaunchScreen.storyboard */ = {
@@ -356,6 +434,46 @@
 			};
 			name = Release;
 		};
+		E29A3D89247E7D4A00B50203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5PM7XA77G;
+				INFOPLIST_FILE = iPSVideosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sheapps.iPSVideosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPSVideos.app/iPSVideos";
+				TEST_TARGERT_NAME = iPSVideoTests;
+			};
+			name = Debug;
+		};
+		E29A3D8A247E7D4A00B50203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5PM7XA77G;
+				INFOPLIST_FILE = iPSVideosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sheapps.iPSVideosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPSVideos.app/iPSVideos";
+				TEST_TARGERT_NAME = iPSVideoTests;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,6 +491,15 @@
 			buildConfigurations = (
 				E2979A17247C1E4900C0F337 /* Debug */,
 				E2979A18247C1E4900C0F337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E29A3D88247E7D4A00B50203 /* Build configuration list for PBXNativeTarget "iPSVideosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29A3D89247E7D4A00B50203 /* Debug */,
+				E29A3D8A247E7D4A00B50203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
