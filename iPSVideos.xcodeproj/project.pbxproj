@@ -21,6 +21,7 @@
 		E29A3D76247D712F00B50203 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A3D75247D712F00B50203 /* ItemRow.swift */; };
 		E29A3D78247D7BA400B50203 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A3D77247D7BA400B50203 /* Utils.swift */; };
 		E29A3D7A247D83B800B50203 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A3D79247D83B800B50203 /* VideoPlayerView.swift */; };
+		E29A3D7C247E6C5700B50203 /* EnvirontmentValueImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A3D7B247E6C5700B50203 /* EnvirontmentValueImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		E29A3D75247D712F00B50203 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		E29A3D77247D7BA400B50203 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E29A3D79247D83B800B50203 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		E29A3D7B247E6C5700B50203 /* EnvirontmentValueImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvirontmentValueImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				E29A3D79247D83B800B50203 /* VideoPlayerView.swift */,
 				E22FCC4B247C5069006F88B8 /* ImageLoader.swift */,
 				E22FCC4D247C50A3006F88B8 /* ImageCache.swift */,
+				E29A3D7B247E6C5700B50203 /* EnvirontmentValueImageCache.swift */,
 				E2979A0B247C1E4900C0F337 /* Assets.xcassets */,
 				E2979A10247C1E4900C0F337 /* LaunchScreen.storyboard */,
 				E2979A13247C1E4900C0F337 /* Info.plist */,
@@ -181,6 +184,7 @@
 				E2979A1C247C212000C0F337 /* Fetcher.swift in Sources */,
 				E29A3D7A247D83B800B50203 /* VideoPlayerView.swift in Sources */,
 				E2979A0A247C1E4500C0F337 /* ContentView.swift in Sources */,
+				E29A3D7C247E6C5700B50203 /* EnvirontmentValueImageCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,8 +12,8 @@ import Foundation
 
 struct ContentView: View {
     @ObservedObject var fetcher = Fetcher()
+    @Environment(\.imageCache) var cache: ImageCache
     
-    //@Environment(\.imageCache) var cache: ImageCache
     //let url = URL(string: "https://i.picsum.photos/id/477/2000/2000.jpg")!
     
     //NavigationLink(destination: DetailView())

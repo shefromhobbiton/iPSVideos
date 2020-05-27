@@ -11,10 +11,12 @@ import SwiftUI
 struct AsyncImage<Placeholder: View>: View {
     @ObservedObject private var loader: ImageLoader
     private let placeholder: Placeholder?
+    private let configuration: (Image) -> Image
     
-    init(url: URL, placeholder: Placeholder? = nil) {
-        loader = ImageLoader(url: url)
+    init(url: URL, placeholder: Placeholder? = nil, cache: ImageCache? = nil, configuration: @escaping (Image) -> Image = { $0 }) {
+        loader = ImageLoader(url: url, cache: cache)
         self.placeholder = placeholder
+        self.configuration = configuration
     }
 
     var body: some View {
@@ -26,7 +28,8 @@ struct AsyncImage<Placeholder: View>: View {
     private var image: some View {
         Group {
             if loader.image != nil {
-                Image(uiImage: loader.image!)
+                //Image(uiImage: loader.image!)
+                configuration(Image(uiImage: loader.image!))
                     .resizable()
                     .frame(width: 40.0, height: 40.0)
             } else {
